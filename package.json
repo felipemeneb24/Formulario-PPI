@@ -1,0 +1,30 @@
+{
+  "name": "formulario-ppi",
+  "version": "1.0.0",
+  "description": "Manipulacao de dados formulario ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipemeneb24/Formulario-PPI.git"
+  },
+  "keywords": [
+    "http",
+    "node",
+    "formulario",
+    "html"
+  ],
+  "author": "Felipe Meneghetti Barreto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipemeneb24/Formulario-PPI/issues"
+  },
+  "homepage": "https://github.com/felipemeneb24/Formulario-PPI#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
