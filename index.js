@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 const porta = 3000;
 const host = '0.0.0.0' // todas as placas de rede do pc
 var ListarProdutos = [];
@@ -27,7 +28,9 @@ app.use('/CadastrodeProdutos', (req, resp) => {
     resp.write('<title>Resultados</title>');
     resp.write('</head>');
     resp.write('<body>');
+    resp.write('<img src="Concluido.png" width="40" height="40">')
     resp.write(`<h3>Produto ${produto} ${marca} cadastrado com Sucesso!</h3>`);
+    resp.write('<br>')
     resp.write('<button><a href="/">Voltar</a></button>');
     resp.write('<br>');
     resp.write('<br>')
@@ -75,7 +78,7 @@ app.use('/ListarProdutos', (req, resp) => {
     resp.write('</html>');
 });
 
-app.use(express.static('./Publico'));
+app.use(express.static(path.join(process..cws(),'./Publico')));
 
 app.listen(porta, host, () => {
     console.log(`Servidor executando na porta http://${host}:${porta}`);
