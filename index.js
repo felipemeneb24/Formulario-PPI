@@ -78,7 +78,7 @@ app.use('/ListarProdutos', (req, resp) => {
     resp.write('</html>');
 });
 
-app.use(express.static(path.join(process.cws(),'./Publico')));
+app.use(express.static(path.join(process.cwd(),'/Publico')));
 
 app.listen(porta, host, () => {
     console.log(`Servidor executando na porta http://${host}:${porta}`);
